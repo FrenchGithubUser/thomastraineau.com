@@ -5,12 +5,13 @@ const defaultImage = "thomas"
 let currentImage = defaultImage
 
 titles.forEach(title => {
-    title.addEventListener('mouseover', function () {
-        const newTitle = this.dataset.name;
-        switchImageAndDescription(newTitle)
-        titles.forEach(t => t.classList.remove('active'));
-        title.classList.add('active');
-    });
+    ['click', 'mouseover'].forEach(evt =>
+        title.addEventListener(evt, function () {
+            const newTitle = this.dataset.name;
+            switchImageAndDescription(newTitle)
+            titles.forEach(t => t.classList.remove('active'));
+            title.classList.add('active');
+        }));
     // title.addEventListener('mouseout', () => {
     //     switchImage(defaultImage)
     // })

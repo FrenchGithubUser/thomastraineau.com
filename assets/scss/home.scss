@@ -1,52 +1,19 @@
 .home {
-    display: flex;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // overflow-y: hidden;
 }
 
 h1 {
     text-align: center;
 }
 
-#main-img-container {
-    width: 45vw;
-    padding: 30px 50px;
-    box-sizing: border-box;
-    height: 100% !important;
-
-    img {
-        border-radius: 30px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 1;
-        transition: opacity 0.3s ease;
-    }
-}
-
-.text-container {
-    width: 45vw;
-
-    .description {
-        position: absolute;
-        transition: opacity 200ms ease;
-        top: 29vh;
-        width: 45vw;
-        text-align: justify;
-    }
-
-    .no-opacity {
-        opacity: 0;
-    }
-
-    .learn-more {
-        position: absolute;
-        top: 50vh;
-    }
-}
-
 .titles {
+
     position: absolute;
-    top: 65vh;
+    bottom: 20px;
 
     .title {
         height: 100%;
@@ -66,6 +33,7 @@ h1 {
         font-weight: 900;
         font-size: 17px;
         letter-spacing: 0.045em;
+        margin-bottom: 20px !important;
     }
 
     .btn svg {
@@ -99,5 +67,79 @@ h1 {
         stroke-width: 4;
         stroke-dasharray: 353, 0;
         stroke-dashoffset: 0;
+    }
+}
+
+#main-img-container {
+    box-sizing: border-box;
+    height: 50%;
+    width: 95%;
+    padding-top: 10px;
+
+    img {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.text-container {
+    width: 95vw;
+
+    .description {
+        transition: opacity 200ms ease;
+        text-align: justify;
+        position: absolute;
+        width: 95vw;
+
+        .learn-more {
+            margin-top: 15px;
+            font-weight: bold;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .no-opacity {
+        opacity: 0;
+    }
+
+
+}
+
+.home {
+    @media screen and (min-width: 700px) {
+        flex-direction: row;
+
+        h1 {
+            position: fixed;
+            top: 0;
+        }
+
+        #main-img-container {
+            width: 45vw;
+            padding: 30px 50px;
+            height: 100% !important;
+        }
+
+        .text-container {
+            width: 45vw;
+
+            .description {
+                top: 29vh;
+                width: 45vw;
+            }
+
+            .titles {
+                top: 65vh;
+            }
+        }
+
+
     }
 }
