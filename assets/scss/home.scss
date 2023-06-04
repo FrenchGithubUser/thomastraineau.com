@@ -6,14 +6,12 @@
     // overflow-y: hidden;
 }
 
-h1 {
-    text-align: center;
-}
+
 
 .titles {
-
     position: absolute;
     bottom: 20px;
+    text-align: center;
 
     .title {
         height: 100%;
@@ -70,9 +68,13 @@ h1 {
     }
 }
 
+h1 {
+    text-align: center;
+}
+
 #main-img-container {
     box-sizing: border-box;
-    height: 50%;
+    height: 45vh;
     width: 95%;
     padding-top: 10px;
 
@@ -98,6 +100,7 @@ h1 {
         .learn-more {
             margin-top: 15px;
             font-weight: bold;
+            font-size: 1.2em;
 
             a {
                 text-decoration: none;
@@ -108,8 +111,6 @@ h1 {
     .no-opacity {
         opacity: 0;
     }
-
-
 }
 
 .home {
