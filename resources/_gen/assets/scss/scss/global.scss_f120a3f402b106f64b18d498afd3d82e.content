@@ -1,0 +1,10 @@
+:root {
+  --primary: #a8f569;
+  --secondary: #6fb679; }
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  background-color: #061C30;
+  color: #848d96; }

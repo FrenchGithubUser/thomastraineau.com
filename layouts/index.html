@@ -1,0 +1,66 @@
+{{ $specificStyle := resources.Get "scss/home.scss" }}
+{{ $specificStyle = $specificStyle | toCSS }}
+{{ $globalStyle := resources.Get "scss/global.scss" }}
+{{ $globalStyle = $globalStyle | toCSS }}
+
+{{ $titles := getJSON "data/titles.json" }}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{$specificStyle.RelPermalink}}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{$globalStyle.RelPermalink}}" type="text/css" media="screen" />
+    <title>Home</title>
+</head>
+
+
+
+<body>
+    <div class="home">
+
+        <div id="main-img-container">
+            <img src="images/thomas.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <h1>Thomas Traineau</h1>
+            <div class="description default">
+                {{ i18n "home.descriptions.default" }}
+            </div>
+            {{ range $index, $title := $titles }}
+            <div class="description no-opacity {{$title.name}}">
+                {{ i18n (printf "home.descriptions.%s" $title.name) }}
+            </div>
+            {{ end }}
+
+
+            <div class="titles">
+                {{ range $index, $title := $titles }}
+                <div class="title" data-name="{{$title.name}}">
+                    <a href="{{$title.name}}" class="btn">
+                        <svg width="190" height="62">
+                            <defs>
+                                <linearGradient id="grad1">
+                                    <stop offset="0%" stop-color="var(--primary)" />
+                                    <stop offset="100%" stop-color="var(--secondary)" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="180" height="50"></rect>
+                        </svg>
+                        <span>{{ i18n (printf "home.%s" $title.name) }}</span>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+            <div class="learn-more">
+                {{ i18n "home.learn_more" }}
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <script src="/js/home.js"></script>
+</body>

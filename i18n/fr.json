@@ -1,0 +1,29 @@
+{
+    "home": {
+        "dev": "Développeur",
+        "magician": "Magicien",
+        "sports": "Sportif et coach",
+        "lucid": "Rêveur lucide",
+        "descriptions": {
+            "default": "Default description",
+            "dev": "Diplômé de l'école d'ingénieurs UTC, 3 ans d'apprentissage en entreprise (Alternance) et de nombreux projets réalisés; j'ai acquis de nombreuses connaissances générales de développement ainsi que spécifiques sur de nombreuses technologies.",
+            "magician": "Magicien blabla",
+            "sports": "Sports blabla",
+            "lucid": "Lucid dreamer blabla"
+        },
+        "learn_more": "En savoir plus"
+    },
+    "lucid": {
+        "theme_park": "Parcs d'attractions 🎢",
+        "food": "Nourriture 🍨",
+        "fly": "Voler 🕊",
+        "addictions": "Addictions 🚬",
+        "fears": "Peurs 👻",
+        "sports_skills": "Sports et compétences 🏋🏻‍♂️",
+        "more": "Et bien plus encore 🤩",
+        "travel": "Voyager 🌍"
+    },
+    "expressions": {
+        "send": "Envoyer"
+    }
+}

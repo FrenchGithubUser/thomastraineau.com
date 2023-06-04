@@ -1,0 +1,16 @@
+{
+    "theme": "hugo-split-theme",
+    "languages": {
+        "fr": {},
+        "en": {}
+    },
+    "defaultContentLanguage": "fr",
+    "markup": {
+        "defaultMarkdownHandler": "goldmark",
+        "goldmark": {
+            "renderer": {
+                "unsafe": true
+            }
+        }
+    }
+}

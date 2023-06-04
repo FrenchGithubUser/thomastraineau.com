@@ -1,0 +1,13 @@
+<div class="img-text-sidetoside">
+    <div class="text">
+        <h2 class="name">
+            {{i18n (printf "%s.%s" .Page.Title (.Get "name"))}}
+        </h2>
+        <p>
+            {{ .Inner }}
+        </p>
+    </div>
+    <div class="image">
+        <img src='images/{{ .Get "name" }}.jpg' alt='{{.Get "name"}}'>
+    </div>
+</div>

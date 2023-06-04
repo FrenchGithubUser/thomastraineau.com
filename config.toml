@@ -1,0 +1,6 @@
+# Site settings
+baseURL = "https://thomastraineau.com"
+defaultContentLanguage = "fr"
+title = "ThomasTraineau"
+theme = "hugo-split-theme"
+

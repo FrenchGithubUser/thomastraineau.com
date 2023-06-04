@@ -1,0 +1,54 @@
+body {
+  margin: 20px 20vw;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 700px) {
+    body {
+      margin: 20px 5vw; }
+      body .img-text-sidetoside {
+        flex-direction: column !important; }
+        body .img-text-sidetoside img {
+          width: 100%;
+          margin: 5px 0px; } }
+p {
+  text-align: justify; }
+
+.summary {
+  margin-bottom: 40px; }
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: bold; }
+
+.img-text-sidetoside {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center; }
+  .img-text-sidetoside:nth-of-type(2n) {
+    flex-direction: row-reverse; }
+  .img-text-sidetoside .text .name {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .img-text-sidetoside img {
+    margin: 0px 15px;
+    border-radius: 10px;
+    width: 25vw; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold; }
+  form .explanation {
+    text-align: center; }
+  form input {
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold; }
+  form button {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold; }

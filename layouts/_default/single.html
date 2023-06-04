@@ -1,0 +1,20 @@
+{{ $globalStyle := resources.Get "scss/global.scss" }}
+{{ $globalStyle = $globalStyle | toCSS }}
+{{ $singleStyle := resources.Get "scss/single.scss" }}
+{{ $singleStyle = $singleStyle | toCSS }}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{$globalStyle.RelPermalink}}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{$singleStyle.RelPermalink}}" type="text/css" media="screen" />
+    <title>{{ i18n "home.lucid_dreamer" }}</title>
+</head>
+
+
+<body>
+    <div class="title">{{i18n (printf "home.%s" .Page.Title)}}</div>
+
+    {{.Content}}
+</body>
