@@ -1,10 +1,20 @@
 body {
     margin: 20px 20vw;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 35px;
 }
 
 p {
     text-align: justify;
+}
+
+.attention-catcher {
+    font-weight: bold;
+    color: rgb(219, 223, 248);
 }
 
 .summary {

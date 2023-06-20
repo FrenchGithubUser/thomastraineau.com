@@ -18,7 +18,6 @@
 
 <body>
     <div class="home">
-
         <div id="main-img-container">
             <img src="images/thomas.jpg" alt="">
         </div>
@@ -27,6 +26,7 @@
             <div class="description default">
                 {{ i18n "home.descriptions.default" }}
             </div>
+
             {{ range $index, $title := $titles }}
             <div class="description no-opacity {{$title.name}}">
                 {{ i18n (printf "home.descriptions.%s" $title.name) }}
@@ -37,7 +37,6 @@
                 </div>
             </div>
             {{ end }}
-
 
             <div class="titles">
                 {{ range $index, $title := $titles }}
@@ -57,13 +56,8 @@
                 </div>
                 {{ end }}
             </div>
-
-
-
+            {{ partial "footer.html" }}
         </div>
-
-
-
     </div>
     <script src="/js/home.js"></script>
 </body>

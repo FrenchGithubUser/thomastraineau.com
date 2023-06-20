@@ -3,7 +3,10 @@ title = "lucid"
 +++
 
 <p class="summary">
-    Cela fait maintenant plusieurs années que je pratique les rêves lucides. Après avoir lu de nombreux livres 📚, vécu beaucoup d'expériences 🪂 et enseigné les techniques à multiples personnes, j'ai créé cette formation. Elle a pour but de vous mener le plus rapidement à vos premiers rêves lucides 🚀, en vous donant les techniques les plus efficaces ⚡. Vous comprendrez le principe derrière le déclenchement des rêves lucides et pourrez vous les approprier. Vous rejoindrez aussi un groupe privé de rêveurs pour vous entraider et échanger sur de nombreux sujets 💬. Voici quelques raisons supplémentaires de suivre la formation :
+   <span class="attention-catcher">Ce que vous êtes entrain de lire va changer votre vie.</span> Les rêves lucides sont des rêves dans lesquels vous êtes conscients de rêver, et vous pouvez en prendre le contrôle. Cela vous ouvre une immensité de portes vers de nombreuses possibilités. Les loies physiques et sociales disparaissent, vous prenez la main sur le monde et vous seul savez ce qu'il s'y passe. Au réveil, vous vous souviendrez de ce qu'il s'est passé comme si vous l'avez fait pour de vrai. Vous pouvez vous en servir pour vous amuser, devenir quelqu'un de meilleur, et n'importe quoi d'autre !
+   <br/>
+   <br/>
+   Cela fait maintenant plusieurs années que je pratique les rêves lucides. Après avoir lu de nombreux livres 📚, vécu beaucoup d'expériences 🪂 et enseigné les techniques à multiples personnes, j'ai créé cette formation. Elle a pour but de vous mener le plus rapidement à vos premiers rêves lucides 🚀, en vous donant les techniques les plus efficaces ⚡. Vous comprendrez le principe derrière le déclenchement des rêves lucides et pourrez vous les approprier. Vous rejoindrez aussi un groupe privé de rêveurs pour vous entraider et échanger sur de nombreux sujets 💬. Voici quelques raisons supplémentaires de suivre la formation :
 </p>
 
 {{< img-text-sidetoside name="fly" >}}

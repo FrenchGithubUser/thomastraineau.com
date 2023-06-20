@@ -1,6 +1,7 @@
 :root {
     --primary: #a8f569;
     --secondary: #6fb679;
+    --text-color: #848d96;
 }
 
 body {
@@ -8,5 +9,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #061C30;
-    color: #848d96;
+    color: var(--text-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    .item {
+        margin: 0px 10px;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
